@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript"></script>
+function alertFunction()
+{
+alert("This is Alert!!!!";)
+}
+function confirmationAlert()
+{
+  var(pressButton=confirm("I am example of confirm Box\n please press any button");
+  if(pressButton==true)
+    msg="You pressed ok!!";
+  else
+    msg"You pressed Cancel!!!";
+document.grtElementBy.ID("confirmdemo").innerHTML=msg;
+ }
+ fumction  promptFunction()
+ {
+ var text.prompt("please Enter your name");
+ if(text!=null)
+    msg"Welcom" + text+" to Selenium World!!!"; 
+    document.grtElementByID("promptdemo").innerHTML=msg;
+    }
+    </head>
+<body>
+<h2>Alert Box Example</h2>
+<fieldset>
+<legend>Alert Box</legend>
+<p>Click the button to display an alert box.</p>
+<button onclick="alertFunction()">Click on me</button>
+</fieldset>
+
+<h2>Confirm Box Example</h2>
+<fieldset>
+<legend>Confirm Box</legend>
+<p>Click the button to display an confirm box.</p>
+<button onclick="confirmationAlert()">Click on me</button>
+<p id="confirmdemo"></p>
+</fieldset>
+
+<h2>Prompt Box Example</h2>
+<fieldset>
+<legend>prompt Box</legend>
+<p>Click the button to display an prompt box.</p>
+<button onclick="promptFunction()">Click on me</button>
+<p id="promptdemo"></p>
+</fieldset>
+<body>
+</html>
